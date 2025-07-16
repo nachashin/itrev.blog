@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="https://andybrewer.github.io/mvp/mvp.css">
+    <style>
+      .menu:hover {cursor:pointer;text-decoration:underline;}
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="description" content="itrev.blog">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>itrev.blog</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+    <ul>
+      <li class="menu" id="link1">section 1</li>
+      <li class="menu" id="link2">section 2</li>
+      <li class="menu" id="link3">section 3</li>
+    </ul>
+    </nav>
+    <h1>itrev.blog</h1>
+  </header>
+
+  <main>
+    <section id="area1">
+      <header>
+        <h2>h2～h6タグ</h2>
+        <p>サブヘッダ</p>
+      </header>
+      <aside>
+        <h3>H3タグ</h3>
+        <p>サブヘッダ</p>
+      </aside>
+      <aside>
+        <h4>H4タグ</h4>
+        <p>サブヘッダ</p>
+      </aside>
+      <aside>
+        <h5>H5タグ</h5>
+        <p>サブヘッダ</p>
+      </aside>
+      <aside>
+        <h6>H6タグ</h6>
+        <p>サブヘッダ</p>
+      </aside>
+    </section>
+
+    <section id="area2">
+      <header>
+        <h2>table,ul,ol,dlタグ</h2>
+        <p>サブヘッダ</p>
+      </header>
+
+      <aside>
+        <table>
+        <caption>テーブル</caption>
+        <thead>
+          <tr><th>ID</th><th>氏名</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td>項目１</td></tr>
+          <tr><td>2</td><td>項目２</td></tr>
+          <tr><td>3</td><td>項目３</td></tr>
+        </tbody>
+        </table>
+      </aside>
+
+      <aside>
+        <ul>
+          <li>リスト</li>
+          <li>リスト</li>
+          <li>リスト</li>
+        </ul>
+      </aside>
+
+      <aside>
+        <ol>
+          <li>リスト</li>
+          <li>リスト</li>
+          <li>リスト</li>
+        </ol>
+      </aside>
+
+      <aside>
+        <dl>
+          <dt>定義</dt><dd>内容</dd>
+          <dt>定義</dt><dd>内容</dd>
+          <dt>定義</dt><dd>内容</dd>
+        </dl>
+      </aside>
+    </section>
+    
+    <section id="area3">
+      <header>
+        <h2>formタグ関連</h2>
+      </header>
+
+      <form>
+      <ul>
+        <li>INPUTフォーム(text)<input type="text"/></li>
+        <li>INPUTフォーム(radio)<input type="radio"/></li>
+        <li>INPUTフォーム(checkbox)<input type="checkbox"/></li>
+        <li>SELECTフォーム<select><option value="1">選択肢１</option><option value="2">選択肢２</option><option value="3">選択肢３</option></li>
+      </ul>
+      </form>
+    </section>
+  </main>
+
+<script>
+$(blogction() {
+  $('section').hide();
+  $('#area1').show();
+  $('.menu').on('click', blogction() {
+    tgt = '#area' + $(this).attr('id').replace('link','');
+  $('section').hide();
+    $(tgt).show();
+  });
+});
+</script>
+</body>
+</html>
+
